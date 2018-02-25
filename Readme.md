@@ -9,11 +9,11 @@ export RECAIUS_ID=''
 export RECAIUS_PASSWORD=''
 export CHAT_TOKEN_JA_EN=''
 
-git clone 
+git clone https://github.com/recaius/simplebot-with-recaius.git
 cd simplebot-with-recaius
 virtualenv . -p python3
 pip install flask
-python simple.py
+python simplebot.py
 ```
 
 以上。
