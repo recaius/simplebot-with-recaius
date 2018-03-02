@@ -35,6 +35,14 @@ def translate(message, trans_from, trans_to):
     return trans['data']['translations'][0]['translatedText']
 
 
+@app.before_request
+def before_request():
+    print(request.headers)
+    print(request.form)
+    print(request.method)
+    print(request.endpoint)
+
+
 @app.route('/ja_en', methods=['POST'])
 def japanese_to_english():
     try:
