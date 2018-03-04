@@ -12,7 +12,7 @@ export CHAT_TOKEN_JA_EN=''
 git clone https://github.com/recaius/simplebot-with-recaius.git
 cd simplebot-with-recaius
 virtualenv . -p python3
-pip install flask
+pip install flask requests
 python simplebot.py
 ```
 
