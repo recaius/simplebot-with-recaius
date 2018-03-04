@@ -1,6 +1,16 @@
 Recaiusにより口語翻訳を行う簡易ボット(Slack / Mattermost用)
 ====
 
+Slack / Mattermostの設定
+----
+
+外向きの WebHookを設定します。
+
+. コンテントタイプは「application/x-www-form-urlencoded」
+. トリガーワードは「翻訳」など
+. コールバックURLは「 https://simplebot:5000/ja_en 」など
+
+
 ローカル PC上での実行手順
 ----
 
@@ -18,6 +28,7 @@ export CHAT_TOKEN_JA_EN=''  # Slack / Mattermostで設定したトークン
 python simplebot.py
 ```
 
+
 Dockerでの実行手順
 ----
 
@@ -28,6 +39,7 @@ vi Dockerfile  # 上記の3つの環境変数を設定して下さい。
 docker build . -t simplebot
 docker run -d -p 5000:5000 simplebot
 ```
+
 
 Herokuでの実行手順
 ----
@@ -44,6 +56,18 @@ git push heroku master
 
 heroku logs  # 正常に起動したか確認します。
 ```
+
+
+動作確認
+----
+
+Slack / Mattermostから以下の様に発言します。
+
+<あなたの名前>  「翻訳 私はカモメ」
+
+以下の様に回答があれば動作しています。
+
+<Recaius [BOT]> 「I am a sea gull.」
 
 
 以上。
