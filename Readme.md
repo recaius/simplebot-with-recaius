@@ -8,7 +8,8 @@ Slack / Mattermostの設定
 
 1. コンテントタイプは「application/x-www-form-urlencoded」
 1. トリガーワードは「翻訳」など
-1. コールバックURLは「 https://simplebot:5000/ja_en 」など
+1. コールバックURLは「 https://simplebot:5000/ja_en 」など、
+「/ja_en」をエンドポイントとして下さい。
 
 
 ローカル PC上での実行手順
