@@ -58,7 +58,9 @@ def japanese_to_english():
     except:
         in_text = ""
 
-    result = translate(in_text, 'ja', 'en')
+    target_text = in_text[in_text.find(' '):]
+
+    result = translate(target_text, 'ja', 'en')
 
     payload_to_chat = {
         'text': result,
