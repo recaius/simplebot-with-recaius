@@ -1,6 +1,10 @@
 Recaiusにより口語翻訳を行う簡易ボット(Slack / Mattermost用)
 ====
 
+日英翻訳を行なう例です。
+他の翻訳を行なうには、それぞれ同様にエンドポイントを追加し、WebHookの設定を行ないます。
+
+
 Slack / Mattermostの設定
 ----
 
