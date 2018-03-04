@@ -45,6 +45,8 @@ Herokuでの実行手順
 ----
 
 事前に Herokuのアカウント作成や CLIのインストールを行って下さい。
+Herokuでの実行に必要な設定は含んでいます。
+Heroku上のアプリ名(simplebot-xxxxx の部分)は重複しない様に変更してください。
 
 ```bash
 heroku login
