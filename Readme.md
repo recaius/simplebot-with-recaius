@@ -68,7 +68,7 @@ heroku logs  # 正常に起動したか確認します。
 動作確認
 ----
 
-Slack / Mattermostから以下の様に発言します。
+Slack / Mattermostから以下の様に発言(「」部分)します。
 
 ```
 <あなたの名前>
