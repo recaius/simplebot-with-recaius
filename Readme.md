@@ -6,9 +6,9 @@ Slack / Mattermostの設定
 
 外向きの WebHookを設定します。
 
-. コンテントタイプは「application/x-www-form-urlencoded」
-. トリガーワードは「翻訳」など
-. コールバックURLは「 https://simplebot:5000/ja_en 」など
+1. コンテントタイプは「application/x-www-form-urlencoded」
+1. トリガーワードは「翻訳」など
+1. コールバックURLは「 https://simplebot:5000/ja_en 」など
 
 
 ローカル PC上での実行手順
@@ -63,11 +63,16 @@ heroku logs  # 正常に起動したか確認します。
 
 Slack / Mattermostから以下の様に発言します。
 
-<あなたの名前>  「翻訳 私はカモメ」
+```
+<あなたの名前>
+「翻訳 私はカモメ」
+```
 
 以下の様に回答があれば動作しています。
 
-<Recaius [BOT]> 「I am a sea gull.」
-
+```
+<Recaius [BOT]>
+「I am a sea gull.」
+```
 
 以上。
