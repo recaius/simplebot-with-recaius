@@ -57,7 +57,7 @@ Heroku上のアプリ名(simplebot-xxxxx の部分)は重複しない様に変�
 heroku login
 heroku create simplebot-xxxxx
 
-# ここで Heroku上で上記3つの環境変数を設定してください。
+# ここで Herokuサーバの管理コンソール上で上記3つの環境変数を設定してください。
 
 git push heroku master
 
