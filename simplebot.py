@@ -61,7 +61,7 @@ def japanese_to_english():
     result = translate(in_text, 'ja', 'en')
 
     payload_to_chat = {
-        'text': 'text: ' + result,
+        'text': result,
         'MATTERMOST_TOKEN': chat_token
     }
 
